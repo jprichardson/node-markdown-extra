@@ -1,0 +1,30 @@
+{
+  "name": "markdown-extra",
+  "version": "0.0.1",
+  "description": "Some extra methods for parsing markdown.",
+  "homepage": [
+    ""
+  ],
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "markdown"
+  ],
+  "author": "JP Richardson <jprichardson@gmail.com>",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": ""
+    }
+  ],
+  "dependencies": {
+    "marked": "~0.2.5"
+  },
+  "devDependencies": {},
+  "main": "./lib/markdown-extra.js",
+  "scripts": {
+    "test": "mocha test"
+  }
+}

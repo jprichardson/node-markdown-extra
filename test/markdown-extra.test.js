@@ -59,9 +59,9 @@ test('+ content', function() {
   T (content === d);
 })
 
-test('+ title', function() {
-  var title1 = mde.title(data);
-  var title2 = mde.title(data2);
+test('+ heading', function() {
+  var title1 = mde.heading(data);
+  var title2 = mde.heading(data2);
 
   T (title1 === 'The Fall of the Roman Empire')
   T (title2 === 'The Fall of the Roman Empire')

@@ -17,7 +17,59 @@ Installation
 
 
 
-See tests for usage.
+Example
+-------
+
+Take a markdown file and retrieve some info from it:
+
+```markdown
+<!--
+author: JP Richardson
+publish: 2012-03-04
+tags: war, history
+anything: can write anything
+-->
+
+The Fall of the Roman Empire
+============================
+
+**Julius Ceasar** was...
+
+```
+
+### heading(markdown)
+
+Get its heading or title...
+
+```javascript
+var mde = require('markdown-extra');
+var title = mde.heading(mymarkdown);
+console.log(title); //The Fall of the Roman Empire
+```
+
+
+### metadata(markdown, [parser])
+
+Get its metadata ...
+
+```javascript
+var mde = require('markdown-extra');
+var meta = mde.meta(mymarkdown);
+
+console.log(meta);
+```
+
+outputs...
+
+```markdown
+The Fall of the Roman Empire
+============================
+
+**Julius Ceasar** was...
+
+```
+
+See tests for more usage...
 
 License
 -------

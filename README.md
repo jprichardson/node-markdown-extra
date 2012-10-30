@@ -48,13 +48,13 @@ console.log(title); //The Fall of the Roman Empire
 ```
 
 
-### metadata(markdown, [parser])
+### content(markdown)
 
-Get its metadata ...
+Get its content ...
 
 ```javascript
 var mde = require('markdown-extra');
-var meta = mde.meta(mymarkdown);
+var meta = mde.content(mymarkdown);
 
 console.log(meta);
 ```
@@ -68,6 +68,27 @@ The Fall of the Roman Empire
 **Julius Ceasar** was...
 
 ```
+
+
+### metadata(markdown, [parser])
+
+Get its metadata. Pass in a function for an optional parser.
+
+```javascript
+var mde = require('markdown-extra');
+var meta = mde.metadata(mymarkdown);
+
+console.log(meta);
+```
+
+outputs...
+
+    author: JP Richardson
+    publish: 2012-03-04
+    tags: war, history
+    anything: can write anything
+
+
 
 See tests for more usage...
 

@@ -7,7 +7,7 @@ Some extra methods for parsing markdown.
 Why?
 ----
 
-[Potter](http://pottercms.com) needed some markdown parsing methods.
+I needed some markdown parsing methods for other modules.
 
 
 Installation
@@ -37,7 +37,7 @@ The Fall of the Roman Empire
 
 ```
 
-### heading(markdown)
+### heading(markdown) / title(markdown)
 
 Get its heading or title...
 

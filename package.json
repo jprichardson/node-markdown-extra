@@ -1,6 +1,6 @@
 {
   "name": "markdown-extra",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Some extra methods for parsing markdown.",
   "homepage": [
     ""
@@ -22,7 +22,10 @@
   "dependencies": {
     "marked": "~0.2.5"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "testutil": "~0.4.0",
+    "mocha": "*"
+  },
   "main": "./lib/markdown-extra.js",
   "scripts": {
     "test": "mocha test"

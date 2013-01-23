@@ -43,7 +43,7 @@ test('+ metadata', function() {
     , "anything: can write anything"
   ].join('\n')
 
-  T (metaData === d)
+  EQ (metaData, d)
 })
 
 test('+ metadata / with parsing', function() {
@@ -56,10 +56,10 @@ test('+ metadata / with parsing', function() {
     return retObj;
   });
 
-  T (metadata.author === 'JP Richardson')
-  T (metadata.publish === '2012-03-04')
-  T (metadata.tags === 'war, history')
-  T (metadata.anything === 'can write anything')
+  EQ (metadata.author, 'JP Richardson')
+  EQ (metadata.publish, '2012-03-04')
+  EQ (metadata.tags, 'war, history')
+  EQ (metadata.anything, 'can write anything')
 })
 
 test('+ content', function() {
@@ -72,14 +72,23 @@ test('+ content', function() {
     , ""
     , ""].join('\n');
 
-  T (content === d);
+  EQ (content, d);
 })
 
 test('+ heading', function() {
   var title1 = mde.heading(data);
   var title2 = mde.heading(data2);
 
-  T (title1 === 'The Fall of the Roman Empire')
-  T (title2 === 'The Fall of the Roman Empire')
+  EQ (title1, 'The Fall of the Roman Empire')
+  EQ (title2, 'The Fall of the Roman Empire')
 })
+
+test('+ title', function() {
+  var title1 = mde.title(data);
+  var title2 = mde.title(data2);
+
+  EQ (title1, 'The Fall of the Roman Empire')
+  EQ (title2, 'The Fall of the Roman Empire')
+})
+
 

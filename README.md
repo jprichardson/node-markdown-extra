@@ -33,7 +33,7 @@ anything: can write anything
 The Fall of the Roman Empire
 ============================
 
-**Julius Ceasar** was...
+**Julius Caesar** was...
 
 ```
 
@@ -65,7 +65,7 @@ outputs...
 The Fall of the Roman Empire
 ============================
 
-**Julius Ceasar** was...
+**Julius Caesar** was...
 
 ```
 
